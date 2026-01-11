@@ -221,7 +221,7 @@ Pam noted employee survey shows confusion about AI strategy: 67% say they're "un
 ### Status Updates
 
 **Year-End Review**
-- EnterpriseAI.ai: 2,000 licenses, 12% monthly active usage, $720K annual cost
+- EnterpriseAI.ai: 2,000 licenses, 37% monthly active usage, $720K annual cost
 - Pilot programs: 1 completed (mixed), 1 ongoing (positive), 2 delayed
 - AI Lab: deferred
 - Total 2025 spend: $1.9M

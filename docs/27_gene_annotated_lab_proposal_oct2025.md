@@ -36,12 +36,12 @@
 > We're stuck.
 >
 > Our current approach—enterprise-wide deployment of a "safe" tool (EnterpriseAI.ai) with extensive governance—has produced:
-> - 12% adoption
+> - 37% adoption
 > - Minimal workflow transformation
 > - Growing frustration from our most capable people
 > - Zero competitive advantage
 
-**[GH]:** Adoption is now 37% per IT's latest numbers, not 12%. But I agree the impact is minimal. However, the diagnosis matters. Is the problem the tool? The governance? The use cases? The training? This proposal assumes it's the tool, but I'm not convinced.
+**[GH]:** Fair enough on the 37% adoption figure. But I agree the impact is minimal. However, the diagnosis matters. Is the problem the tool? The governance? The use cases? The training? This proposal assumes it's the tool, but I'm not convinced.
 
 > Meanwhile, the technology is advancing faster than our evaluation process. By the time we approve a tool, it's already a generation behind.
 

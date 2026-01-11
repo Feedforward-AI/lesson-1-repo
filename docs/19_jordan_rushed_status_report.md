@@ -10,7 +10,7 @@
 
 **Overall Status:** 🟡 Yellow (was Green last week)
 
-**Key Highlight:** EnterpriseAI.ai adoption holding steady at 12% MAU
+**Key Highlight:** EnterpriseAI.ai adoption holding steady at 37% MAU
 
 **Key Concern:** Supply chain pilot delayed again; stakeholder frustration growing
 

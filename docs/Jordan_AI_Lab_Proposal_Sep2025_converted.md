@@ -33,7 +33,7 @@ The Problem We\'re Solving
 Our current approach---enterprise-wide deployment of a \"safe\" tool
 (EnterpriseAI.ai) with extensive governance---has produced:
 
-• 12% adoption
+• 37% adoption
 
 • Minimal workflow transformation
 

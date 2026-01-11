@@ -38,7 +38,7 @@
 
 **December 3** — Elena emails Jordan about cross-channel customer insights synthesis.
 
-**December 11** — Year-end: 12% MAU (later revised to 37%, but shallow). 1 pilot completed (mixed), 1 ongoing, 2 delayed. Total spend: $1.9M (later revised to $8M including all categories). Lab deferred.
+**December 11** — Year-end: 37% MAU (but shallow usage). 1 pilot completed (mixed), 1 ongoing, 2 delayed. Total spend: $1.9M (later revised to $8M including all categories). Lab deferred.
 
 **December 2025** — GCP delivers benchmark report showing Meridian in third quartile.
 

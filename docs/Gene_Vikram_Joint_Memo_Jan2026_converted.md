@@ -55,7 +55,7 @@ What We Got
 
 • 2,000 licenses deployed
 
-• 12% monthly active users (240 employees)
+• 37% monthly active users (~740 employees)
 
 • Majority of usage: email drafting and meeting summaries
 

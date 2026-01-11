@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meridian Industries | Industrial & Safety Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: #1a1a2e;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .top-bar {
+            background: #1a1a2e;
+            color: #fff;
+            padding: 8px 0;
+            font-size: 13px;
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .top-bar a:hover {
+            color: #f59e0b;
+        }
+
+        header {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon svg {
+            width: 28px;
+            height: 28px;
+            fill: #fff;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+
+        .logo-text span {
+            color: #3b82f6;
+        }
+
+        .search-bar {
+            flex: 1;
+            max-width: 500px;
+            margin: 0 40px;
+        }
+
+        .search-bar form {
+            display: flex;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .search-bar input {
+            flex: 1;
+            padding: 12px 16px;
+            border: none;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .search-bar button {
+            background: #1e40af;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .search-bar button:hover {
+            background: #1d4ed8;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .header-actions a {
+            text-decoration: none;
+            color: #4b5563;
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .header-actions a:hover {
+            color: #1e40af;
+        }
+
+        .cart-count {
+            background: #ef4444;
+            color: #fff;
+            font-size: 11px;
+            padding: 2px 6px;
+            border-radius: 10px;
+            position: relative;
+            top: -8px;
+            left: -8px;
+        }
+
+        nav {
+            background: #f8fafc;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 0;
+        }
+
+        nav li a {
+            display: block;
+            padding: 14px 20px;
+            text-decoration: none;
+            color: #374151;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        nav li a:hover {
+            background: #1e40af;
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3a5f 0%, #1e40af 50%, #3b82f6 100%);
+            color: #fff;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="rgba(255,255,255,0.05)"/></svg>');
+            background-size: 300px;
+        }
+
+        .hero .container {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .hero-content {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #f59e0b;
+            color: #1a1a2e;
+        }
+
+        .btn-primary:hover {
+            background: #fbbf24;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,0.15);
+            color: #fff;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.25);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* Categories */
+        .categories {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 36px;
+            color: #1a1a2e;
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: #6b7280;
+            font-size: 18px;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .category-card {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .category-card:hover {
+            border-color: #3b82f6;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15);
+        }
+
+        .category-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .category-icon svg {
+            width: 35px;
+            height: 35px;
+            fill: #fff;
+        }
+
+        .category-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #1a1a2e;
+        }
+
+        .category-card p {
+            font-size: 14px;
+            color: #6b7280;
+        }
+
+        /* Value Props */
+        .value-props {
+            background: #1a1a2e;
+            color: #fff;
+            padding: 60px 0;
+        }
+
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+        }
+
+        .value-item {
+            text-align: center;
+        }
+
+        .value-icon {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 15px;
+            background: rgba(59, 130, 246, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .value-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: #3b82f6;
+        }
+
+        .value-item h4 {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .value-item p {
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        /* Industries */
+        .industries {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .industry-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+
+        .industry-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+
+        .industry-image {
+            height: 180px;
+            background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .industry-image svg {
+            width: 60px;
+            height: 60px;
+            fill: rgba(255,255,255,0.3);
+        }
+
+        .industry-content {
+            padding: 25px;
+        }
+
+        .industry-content h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #1a1a2e;
+        }
+
+        .industry-content p {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 15px;
+        }
+
+        .industry-link {
+            color: #1e40af;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .industry-link:hover {
+            text-decoration: underline;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            padding: 80px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        .cta-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a2e;
+            color: #fff;
+            padding: 60px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand p {
+            opacity: 0.7;
+            font-size: 14px;
+            margin: 15px 0;
+            line-height: 1.7;
+        }
+
+        .footer-column h4 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column li {
+            margin-bottom: 12px;
+        }
+
+        .footer-column a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .footer-column a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            opacity: 0.7;
+        }
+
+        .footer-bottom a {
+            color: inherit;
+            margin-left: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .category-grid, .value-grid, .industry-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div>Call us: 1-800-MERIDIAN | Free shipping on orders over $500</div>
+            <div>
+                <a href="#">Locations</a>
+                <a href="#">Careers</a>
+                <a href="#">Investor Relations</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-main">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <div class="logo-text">Meridian<span>Industries</span></div>
+                </div>
+
+                <div class="search-bar">
+                    <form>
+                        <input type="text" placeholder="Search 2M+ products by keyword or part number">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+
+                <div class="header-actions">
+                    <a href="#">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a7.5 7.5 0 0 1 13 0"/></svg>
+                        Sign In
+                    </a>
+                    <a href="#">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+                        Cart <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="#">All Products</a></li>
+                    <li><a href="#">Safety</a></li>
+                    <li><a href="#">Facilities</a></li>
+                    <li><a href="#">Tools & Equipment</a></li>
+                    <li><a href="#">Electrical</a></li>
+                    <li><a href="#">HVAC & Plumbing</a></li>
+                    <li><a href="#">Material Handling</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Partner in Industrial Excellence</h1>
+                <p>From safety equipment to facility supplies, Meridian delivers over 2 million products to keep your operations running. Trusted by manufacturers, institutions, and businesses across North America.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">Shop Products</a>
+                    <a href="#" class="btn btn-secondary">Open an Account</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">2M+</div>
+                        <div class="stat-label">Products</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">300+</div>
+                        <div class="stat-label">Locations</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">25K</div>
+                        <div class="stat-label">Employees</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Years</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Shop by Category</h2>
+                <p>Everything you need to run safer, smarter operations</p>
+            </div>
+            <div class="category-grid">
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2a4 4 0 0 1 4 4v2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h2V6a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v2h4V6a2 2 0 0 0-2-2z"/></svg>
+                    </div>
+                    <h3>Safety & Security</h3>
+                    <p>PPE, signage, first aid, fire safety</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l4.59-4.58L18 11l-6 6z"/></svg>
+                    </div>
+                    <h3>Facility Maintenance</h3>
+                    <p>Janitorial, lighting, furniture, HVAC</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24"><path d="M22 9V7h-2V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v2H2v2h2v2H2v2h2v2H2v2h2v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2h2v-2h-2v-2h2v-2h-2V9h2z"/></svg>
+                    </div>
+                    <h3>Tools & Equipment</h3>
+                    <p>Power tools, hand tools, testing</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                    </div>
+                    <h3>Material Handling</h3>
+                    <p>Carts, shelving, packaging, lifts</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    </div>
+                    <h3>Electrical</h3>
+                    <p>Wire, conduit, controls, lighting</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12.5 6.9c1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-2.4.52-3.72 2.22-3.72 4.14 0 2.57 1.91 3.82 4.72 4.57 2.5.67 3 1.62 3 2.63 0 .75-.51 1.95-2.5 1.95-1.9 0-2.67-.89-2.77-2.1H7.52c.11 2.19 1.71 3.42 3.98 3.82V22h3v-2.15c2.41-.49 3.72-2.13 3.72-4.2 0-3.15-2.71-4.23-4.72-4.75-2-.52-2.5-1.29-2.5-2.3 0-.89.72-1.7 2.5-1.7z"/></svg>
+                    </div>
+                    <h3>Plumbing & HVAC</h3>
+                    <p>Pipes, valves, pumps, ventilation</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24"><path d="M14 6l-3.75 5 2.85 3.8-1.6 1.2C9.81 13.75 7 10 7 10l-6 8h22L14 6z"/></svg>
+                    </div>
+                    <h3>Industrial Supplies</h3>
+                    <p>Abrasives, adhesives, fasteners</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/></svg>
+                    </div>
+                    <h3>MRO Solutions</h3>
+                    <p>Planned maintenance programs</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Props -->
+    <section class="value-props">
+        <div class="container">
+            <div class="value-grid">
+                <div class="value-item">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4z"/></svg>
+                    </div>
+                    <h4>Same-Day Shipping</h4>
+                    <p>Order by 5pm for same-day dispatch from 300+ locations</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    </div>
+                    <h4>Expert Support</h4>
+                    <p>Product specialists available 24/7 by phone or chat</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                    </div>
+                    <h4>Easy Ordering</h4>
+                    <p>eProcurement, punchout, EDI integration</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+                    </div>
+                    <h4>Quality Guaranteed</h4>
+                    <p>100% satisfaction or your money back</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries -->
+    <section class="industries">
+        <div class="container">
+            <div class="section-header">
+                <h2>Industries We Serve</h2>
+                <p>Specialized solutions for your sector</p>
+            </div>
+            <div class="industry-grid">
+                <div class="industry-card">
+                    <div class="industry-image">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l4.59-4.58L18 11l-6 6z"/></svg>
+                    </div>
+                    <div class="industry-content">
+                        <h3>Manufacturing</h3>
+                        <p>Keep production lines running with MRO supplies, safety equipment, and inventory management solutions.</p>
+                        <a href="#" class="industry-link">Learn more →</a>
+                    </div>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-image">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l4.59-4.58L18 11l-6 6z"/></svg>
+                    </div>
+                    <div class="industry-content">
+                        <h3>Healthcare & Life Sciences</h3>
+                        <p>Compliant supplies for hospitals, labs, and pharmaceutical facilities with rigorous documentation.</p>
+                        <a href="#" class="industry-link">Learn more →</a>
+                    </div>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-image">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l4.59-4.58L18 11l-6 6z"/></svg>
+                    </div>
+                    <div class="industry-content">
+                        <h3>Government & Education</h3>
+                        <p>Contract-compliant procurement for federal, state, local government and educational institutions.</p>
+                        <a href="#" class="industry-link">Learn more →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Streamline Your Supply Chain?</h2>
+            <p>Open a Meridian account today and get access to custom pricing, dedicated support, and inventory management solutions.</p>
+            <a href="#" class="btn btn-primary">Open an Account</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <div class="logo-text" style="color: #fff;">Meridian<span>Industries</span></div>
+                    </div>
+                    <p>Your trusted partner for industrial, safety, and facility products since 1974. Serving manufacturers, institutions, and businesses across North America.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Safety & PPE</a></li>
+                        <li><a href="#">Facilities</a></li>
+                        <li><a href="#">Tools</a></li>
+                        <li><a href="#">Electrical</a></li>
+                        <li><a href="#">All Categories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Inventory Management</a></li>
+                        <li><a href="#">eProcurement</a></li>
+                        <li><a href="#">Technical Support</a></li>
+                        <li><a href="#">Training</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Find a Location</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2026 Meridian Industries. All rights reserved.</div>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

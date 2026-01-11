@@ -19,7 +19,7 @@
 
 "We're stuck."
 
-- 12% adoption of EnterpriseAI.ai (note: later reports show 37%, but shallow usage)
+- 37% adoption of EnterpriseAI.ai (but shallow usage — email drafting, meeting summaries)
 - Minimal workflow transformation
 - Growing frustration from best people
 - Zero competitive advantage
