@@ -52,9 +52,11 @@ Plus: Add 3 IT FTEs ($420K) and run certification program ($180K).
 
 ---
 
-## Key Quote
+## Key Quotes
 
 "We're not a technology company. Meridian's competitive advantage is operational excellence, customer relationships, and domain expertise—not technical innovation. We should be fast followers, not pioneers."
+
+"The MIT Sloan study on enterprise AI adoption (2025) is instructive here: only about 5% of AI projects deliver measurable business impact. The other 95% fail to scale, fail to produce ROI, or get abandoned. Being a pioneer means absorbing that 95% failure rate ourselves. Being a fast follower means letting others pay that tuition, then learning from the 5% that actually work."
 
 ---
 
