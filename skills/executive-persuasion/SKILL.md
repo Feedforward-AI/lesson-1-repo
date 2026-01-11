@@ -41,7 +41,18 @@ Opportunities seem more valuable when less available. More importantly: loss fra
 
 ## Before Starting
 
-1. **Check for Clarify output** - Look in `docs/` for `clarify-*.md` files
+### First Question: Document Depth
+
+```
+Do you want fast or thorough document review?
+A) Fast - use doc-summary/ (smaller files, quicker responses)
+B) Thorough - use docs/ (full documents, more context)
+C) Skip documents - just work from what I tell you
+```
+
+### Then:
+
+1. **Check for Clarify output** - Look in chosen folder for `clarify-*.md` files
 2. **If found**, extract: goal, key people (especially the persuasion target), stakes, evidence gaps
 3. **If not found**, ask: "Want to run /clarify first, or should I gather what I need now?"
 4. **Summarize understanding** before proceeding: "Here's what I understand about your situation..."

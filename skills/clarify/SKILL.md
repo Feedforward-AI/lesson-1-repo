@@ -9,7 +9,8 @@ A structured discovery interview that helps you understand both the substance of
 
 ## How It Works
 
-1. Open with "What are you trying to accomplish?"
+1. Ask about document depth (fast vs. thorough)
+2. Open with "What are you trying to accomplish?"
 2. Follow user's thread with adaptive questions
 3. Track checklist of areas to cover (visible to user)
 4. Use multiple choice whenever possible for speed
@@ -46,7 +47,20 @@ Track these areas. Show user what's covered vs. remaining.
 
 ## Questioning Approach
 
-### Always Start With
+### First Question: Document Depth
+
+Before diving in, ask:
+
+```
+Do you want fast or thorough document review?
+A) Fast - use doc-summary/ (smaller files, quicker responses)
+B) Thorough - use docs/ (full documents, more context)
+C) Skip documents - just work from what I tell you
+```
+
+Based on answer, read from the appropriate folder when reviewing case materials.
+
+### Then Start With
 "What are you trying to accomplish?"
 
 ### Follow the Thread

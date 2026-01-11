@@ -13,7 +13,18 @@ Transforms a clarified goal into a comprehensive action plan that strengthens yo
 
 ## Before Starting
 
-1. **Read project docs first** - Check `docs/` for clarify-*.md files and other context
+### First Question: Document Depth
+
+```
+Do you want fast or thorough document review?
+A) Fast - use doc-summary/ (smaller files, quicker responses)
+B) Thorough - use docs/ (full documents, more context)
+C) Skip documents - just work from what I tell you
+```
+
+### Then:
+
+1. **Read project docs** - Check chosen folder for clarify-*.md files and other context
 2. **If no clarification exists**, ask: "I don't see a clarification document. Want to run /clarify first, or should I work with what you tell me now?"
 3. **Summarize understanding** before generating plan: "Based on what I've read, here's what I understand..." and confirm with user
 

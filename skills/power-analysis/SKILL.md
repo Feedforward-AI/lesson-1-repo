@@ -48,10 +48,21 @@ The powerful hear "yes" more often and believe their own hype. They have differe
 
 ## Before Starting
 
-1. **Check for Clarify output** - Look in `docs/` for `clarify-*.md` files
+### First Question: Document Depth
+
+```
+Do you want fast or thorough document review?
+A) Fast - use doc-summary/ (smaller files, quicker responses)
+B) Thorough - use docs/ (full documents, more context)
+C) Skip documents - just work from what I tell you
+```
+
+### Then:
+
+1. **Check for Clarify output** - Look in chosen folder for `clarify-*.md` files
 2. **If found**, extract: goal, key people, stakes, context
 3. **If not found**, ask: "Want to run /clarify first, or should I gather context now?"
-4. **Gather case materials** - Offer to review documents (emails, org charts, meeting notes)
+4. **Gather case materials** - Offer to review documents from chosen folder (emails, org charts, meeting notes)
 
 ## Phase 1: Document Review
 
